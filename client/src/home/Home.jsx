@@ -3,6 +3,7 @@ import BestProjects from "../Components/BestProjects";
 // import BasicTransition from "./NewsLetter";
 import Example from "./NewsLetter";
 import PromoBanner from "./Showing";
+import Review from "./Review";
 
 const Home = () => {
  return(
@@ -13,7 +14,9 @@ const Home = () => {
 
    <PromoBanner/>
    </div>
+   <Review/>
    <Example/>
+
   </div>
  )
 }
