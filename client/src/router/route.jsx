@@ -6,6 +6,8 @@ import Home from "../home/Home"
 import App from "../App";
 import About from "../home/About";
 import BookCards from "../home/ProjectCard";
+import { Sidebar } from "flowbite-react";
+import DashboardLayout from "../home/DashboardLayout";
 
 const router = createBrowserRouter([
  {
@@ -25,6 +27,12 @@ const router = createBrowserRouter([
     element: <BookCards/>
    }
   ]
+ },
+ {
+  path: 'admin/Dashboard',
+ element: <DashboardLayout/>
  }
 ])
 export default router;
+
+
