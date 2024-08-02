@@ -8,6 +8,10 @@ import About from "../home/About";
 import BookCards from "../home/ProjectCard";
 import { Sidebar } from "flowbite-react";
 import DashboardLayout from "../home/DashboardLayout";
+import Profile from "../home/ProfileSec";
+import Signup from "../Components/Signup";
+import Login from "../Components/Login";
+import LogOut from "../Components/Logout";
 
 const router = createBrowserRouter([
  {
@@ -29,8 +33,25 @@ const router = createBrowserRouter([
   ]
  },
  {
-  path: 'admin/Dashboard',
- element: <DashboardLayout/>
+ path: '/admin/Dashboard',
+ element: <DashboardLayout/>,
+ children:[
+  {
+  path: '/admin/Dashboard/Profile',
+  element: <Profile/>
+ }
+ ]
+ },
+ {
+  path: "sign-up",
+  element: <Signup/>
+ },{
+  path: "login",
+  element: <Login/>
+ },
+ {
+  path: "logout",
+  element: <LogOut/>
  }
 ])
 export default router;
