@@ -50,7 +50,7 @@ const Login = () => {
     <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
      <div className="max-w-md mx-auto">
       <div>
-       <h1 className="text-2xl font-semibold">Signup Page</h1>
+       <h1 className="text-2xl font-semibold">Login Here!</h1>
       </div>
       <div className="divide-y divide-gray-200">
        <form onSubmit={handleLogin} className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
@@ -66,11 +66,11 @@ const Login = () => {
          </div>
         </div>
         <p>
-         if you haven't account, please <Link to="/sign-up" className='text-violet-600' >Login</Link>
+         if you haven't account, please <Link to="/sign-up" className='text-violet-600' >Signup</Link>
          Here
         </p>
         <div className="relative">
-         <button className="bg-blue-500 text-white rounded-md px-4 py-2">SignUp</button>
+         <button className="bg-blue-500 text-white rounded-md px-4 py-2">Loggin</button>
         </div>
        </form>
       </div>
